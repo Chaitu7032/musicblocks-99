@@ -2978,15 +2978,9 @@ class Activity {
                     window.ActivityContext.setActivity(this);
                 }
 
-                // TEMP compatibility bridge — deprecated, will be removed.
-                // eslint-disable-next-line no-restricted-properties
+                // TEMP compatibility bridge
                 if (!window.activity) {
-                    // eslint-disable-next-line no-restricted-properties
                     window.activity = this;
-                    console.warn(
-                        "[DEPRECATED] window.activity is set for backward compatibility. " +
-                            "Use ActivityContext.getActivity() instead."
-                    );
                 }
             }
         };
@@ -3061,15 +3055,9 @@ class Activity {
                     window.ActivityContext.setActivity(this);
                 }
 
-                // TEMP compatibility bridge — deprecated, will be removed.
-                // eslint-disable-next-line no-restricted-properties
+                // TEMP compatibility bridge
                 if (!window.activity) {
-                    // eslint-disable-next-line no-restricted-properties
                     window.activity = this;
-                    console.warn(
-                        "[DEPRECATED] window.activity is set for backward compatibility. " +
-                            "Use ActivityContext.getActivity() instead."
-                    );
                 }
             }
         };
