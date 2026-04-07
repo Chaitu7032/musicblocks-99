@@ -1296,11 +1296,10 @@ class Activity {
             }
 
             let i = 0;
-            for (const name in blockHelpList) {
-                this.__saveHelpBlock(blockHelpList[name], i * 2000);
-                i += 1;
+            for (const name of blockHelpList) {
+                this.__saveHelpBlock(name, i * 2000);
+                i++;
             }
-
             this.sendAllToTrash(true, true);
         };
 
@@ -4169,7 +4168,7 @@ class Activity {
                 canvas.width = defaultWidth;
                 canvas.height = defaultHeight;
                 overCanvas.width = canvas.width;
-                overCanvas.height = canvas.width;
+                overCanvas.height = canvas.height;
                 canvasHolder.width = defaultWidth;
                 canvasHolder.height = defaultHeight;
             } else {
@@ -4186,7 +4185,7 @@ class Activity {
                 canvas.width = windowWidth;
                 canvas.height = windowHeight;
                 overCanvas.width = canvas.width;
-                overCanvas.height = canvas.width;
+                overCanvas.height = canvas.height;
                 canvasHolder.width = canvas.width;
                 canvasHolder.height = canvas.height;
             }
